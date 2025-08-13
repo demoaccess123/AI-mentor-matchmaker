@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mentor Matchmaker - Find Your Perfect Career Mentor</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h2>🤖 MentorMatch AI</h2>
+            </div>
+            <div class="navbar-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#search" class="nav-link">Find Mentors</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Find Your Perfect Career Mentor with AI</h1>
+                <p class="hero-subtitle">Connect with industry experts who match your goals, personality, and career aspirations using our intelligent matching algorithm.</p>
+                <button onclick="showSearch()" class="cta-button">Start Finding Mentors</button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Expert Mentors</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Match Success</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>AI Matching</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section" style="display: none;">
+        <div class="container">
+            <h2>Find Your Ideal Mentor</h2>
+            <div class="search-form">
+                <div class="form-group">
+                    <label>Industry</label>
+                    <select id="industry">
+                        <option value="">Select Industry</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Education">Education</option>
+                        <option value="Consulting">Consulting</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Role/Position</label>
+                    <input type="text" id="role" placeholder="e.g., Product Manager, Software Engineer">
+                </div>
+                
+                <div class="form-group">
+                    <label>Country</label>
+                    <select id="country">
+                        <option value="">Select Country</option>
+                        <option value="United States">United States</option>
+                        <option value="India">India</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>College/University (Optional)</label>
+                    <input type="text" id="college" placeholder="e.g., Stanford, MIT, IIT">
+                </div>
+                
+                <button onclick="searchMentors()" class="search-button">
+                    <span id="search-text">🔍 Find Mentors</span>
+                    <span id="loading" style="display: none;">⏳ Searching...</span>
+                </button>
+            </div>
+            
+            <!-- Results Section -->
+            <div id="results" class="results-section"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Filtering</h3>
+                    <p>Filter mentors by industry, role, location, and education background</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Matching</h3>
+                    <p>Our AI analyzes compatibility based on career goals and personality</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💼</div>
+                    <h3>Real Profiles</h3>
+                    <p>Connect with verified professionals from LinkedIn and other platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/app.js"></script>
+</body>
+</html>
