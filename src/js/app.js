@@ -41,7 +41,7 @@ async function searchMentors() {
 
     try {
         const filters = { industry, role, country, college };
-        const response = await fetch('/.netlify/functions/searchMentors', {
+        const response = await fetch('/api/searchMentors', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
