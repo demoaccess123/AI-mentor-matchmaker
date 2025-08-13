@@ -1,3 +1,29 @@
+// Navigation Functions - ADD THIS AT THE TOP
+function showHome() {
+    document.getElementById('home').style.display = 'block';
+    document.getElementById('search').style.display = 'none';
+    updateNavigation('home');
+}
+
+function showSearch() {
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('search').style.display = 'block';
+    updateNavigation('search');
+}
+
+function updateNavigation(active) {
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+    const activeLink = document.querySelector(`a[href="#${active}"]`);
+    if (activeLink) {
+        activeLink.classList.add('active');
+    }
+}
+
+// Rest of your existing app2.js code continues below...
+
+
 // Direct LinkedIn Profile Fetcher Frontend
 let currentProfiles = [];
 let isSearching = false;
