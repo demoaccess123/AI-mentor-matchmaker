@@ -1,0 +1,13 @@
+{
+  "name": "ai-mentor-matchmaker",
+  "version": "1.0.0",
+  "description": "AI-powered mentor matching platform",
+  "main": "index.html",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'"
+  }
+}
